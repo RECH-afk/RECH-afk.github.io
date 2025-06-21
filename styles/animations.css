@@ -204,6 +204,33 @@
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--primary) }
+    from, to { opacity: 0.3; } /* Менее заметное исчезновение */
+    50% { opacity: 0.9; }
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Применение анимаций */
+.glitch::before {
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+.typewriter {
+    animation: typing 3.5s steps(30, end);
+}
+
+.typewriter::after {
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
 }
