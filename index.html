@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECH | Разработчик игр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Абстрактные элементы фона -->
+    <div class="background-elements">
+        <div class="grid-lines"></div>
+        <div class="hex-grid"></div>
+    </div>
+    
+    <!-- Частицы -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="#about" class="active">Обо мне</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Шапка -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="RECH">RECH</h1>
+                <h2 class="typewriter">РАЗРАБОТЧИК "КРУТЫХ" ИГР</h2>
+            </div>
+            <div class="hero-abstract pulse"></div>
+        </section>
+        
+        <!-- Информация -->
+        <section id="about" class="info-section fade-in">
+            <h3 class="shake-on-hover">Обо мне</h3>
+            <p>Привет! Я RECH - разработчик игр с фокусом на создании уникальных игровых миров и механик. Моя страсть к играм началась в детстве и превратилась в профессию.</p>
+            <p>Я специализируюсь на разработке инди-игр с необычными концепциями и стильным визуальным оформлением. Мои проекты сочетают в себе глубокий геймплей, атмосферную графику и захватывающие сюжеты.</p>
+            <p>В своей работе я использую современные технологии и подходы, постоянно экспериментирую и ищу новые способы выражения через игровую среду. Каждый мой проект - это уникальный опыт как для игрока, так и для меня как создателя.</p>
+        </section>
+        
+        <!-- Навыки -->
+        <section id="skills" class="info-section fade-in">
+            <h3 class="shake-on-hover">Мои навыки</h3>
+            <div class="skills-grid">
+                <div class="skill-card shake-on-hover">
+                    <div class="skill-icon"><i class="fab fa-unity"></i></div>
+                    <div class="skill-name">Unity Engine</div>
+                </div>
+                <div class="skill-card shake-on-hover">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <div class="skill-name">C#</div>
+                </div>
+                <div class="skill-card shake-on-hover">
+                    <div class="skill-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="skill-name">Design</div>
+                </div>
+                <div class="skill-card shake-on-hover">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <div class="skill-name">Pixel Art</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Проекты -->
+        <section id="projects" class="projects-section">
+            <h3 class="shake-on-hover">Мой основной проект</h3>
+                <div class="project-card fade-in shake-on-hover">
+                    <div class="project-image">
+					<img src="images/DD_Banner.png" alt="Deadly Devastation Preview">
+					</div>
+                    <div class="project-content">
+                        <h4 class="project-title"><i class="fas fa-robot"></i> Deadly Devastation</h4>
+                        <p class="project-description">Многопользовательский хоррор на 4-х челевек с рандомной генерацией окружения.
+						Вы - команда роботов, отправленных на миссию, ваша задача спускаться вглубь комплекса, выполняя задания и избегая монстров.
+						Сможешь ли ТЫ и твоя команда выжить? Узнаем совсем скоро...</p>
+                        <div class="project-tech">
+                            <span class="tech-tag shake-little">Unity</span>
+                            <span class="tech-tag shake-little">C#</span>
+                            <span class="tech-tag shake-little">Networking</span>
+                        </div>
+                        <a href="https://gamejolt.com/games/deadly-devastation/899881" class="project-link shake-on-hover">Очень раннюю версию можно скачать на GameJolt. </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+			
+        <!-- Контакты -->
+        <section id="contacts" class="contacts-section">
+            <h3 class="shake-on-hover">Контакты</h3>
+            <div class="social-links">
+                <!-- Telegram -->
+                <div class="social-card fade-in shake-on-hover">
+                    <div class="social-inner">
+                        <div class="social-front">
+                            <div class="social-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="social-name">Telegram</div>
+                        </div>
+                        <div class="social-back">
+                            <p>Канал с девлогом</p>
+                            <a href="https://t.me/therechlogs" class="social-link shake-on-hover" target="_blank">@therechlogs</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Discord -->
+                <div class="social-card fade-in shake-on-hover">
+                    <div class="social-inner">
+                        <div class="social-front">
+                            <div class="social-icon">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                            <div class="social-name">Discord</div>
+                        </div>
+                        <div class="social-back">
+                            <p>Связь со мной</p>
+                            <a href="#" class="social-link shake-on-hover" target="_blank">rech_dev</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- YouTube -->
+                <div class="social-card fade-in shake-on-hover">
+                    <div class="social-inner">
+                        <div class="social-front">
+                            <div class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="social-name">YouTube</div>
+                        </div>
+                        <div class="social-back">
+                            <p>Хз зачем он тут</p>
+                            <a href="https://www.youtube.com/@rech_dev" class="social-link shake-on-hover" target="_blank">RECH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 RECH</p>
+    </footer>
+    
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
