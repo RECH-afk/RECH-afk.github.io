@@ -197,6 +197,28 @@ function initParticles() {
     }
 }
 
+// Функция для копирования крипто-адресов
+function initCryptoCopy() {
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const address = this.getAttribute('data-address');
+            navigator.clipboard.writeText(address).then(() => {
+                const originalText = this.textContent;
+                this.textContent = 'Скопировано!';
+                this.style.backgroundColor = 'rgba(0, 255, 0, 0.2)';
+                
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.backgroundColor = 'rgba(0, 30, 0, 0.7)';
+                }, 2000);
+            }).catch(err => {
+                console.error('Ошибка копирования: ', err);
+            });
+        });
+    });
+}
+
+
 // Основная функция инициализации
 function init() {
     // Инициализация компонентов
@@ -204,7 +226,8 @@ function init() {
     initTypewriter();
     initScanLines();
     initParticles();
-    
+    initCryptoCopy();
+	
     // Запуск анимаций
     randomShake();
     dynamicTitle();
