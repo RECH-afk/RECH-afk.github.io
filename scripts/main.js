@@ -73,7 +73,7 @@ function randomShake() {
 
 // Динамический title с эффектом "взлома"
 function dynamicTitle() {
-    const originalTitle = "RECH | Разработчик игр";
+    const originalTitle = "RECH | Game Developer";
     const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?/~";
     let iteration = 0;
     let isAnimating = false;

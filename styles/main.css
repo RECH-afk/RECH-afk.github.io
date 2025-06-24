@@ -168,7 +168,7 @@ nav a:hover::after, nav a.active::after {
 
 /* Контент h2 для разных разрешений */
 .hero h2::before {
-    content: "РАЗРАБОТЧИК «КРУТЫХ» ИГР";
+    content: "DEVELOPER OF 'COOL' GAMES";
     display: block;
 }
 
@@ -534,6 +534,9 @@ footer {
     border-top: 1px solid rgba(0, 255, 0, 0.1);
     position: relative;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
@@ -542,15 +545,17 @@ footer p {
     letter-spacing: 1px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .footer-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1px;
     background-color: var(--background-dark);
     color: var(--primary-light);
+    width: 100%;
 }
 
 .footer-grid::before {
@@ -569,22 +574,13 @@ footer p {
     z-index: 2;
 }
 
-.footer-left {
-    text-align: left;
-	padding: 15px;
-}
-
-.footer-right {
-    text-align: right;
-    padding: 15px;
-}
-
 .footer-links {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .footer-links a {
@@ -728,6 +724,7 @@ footer p {
     color: var(--primary-light);
     margin-top: 10px;
     animation: textGlow 3s infinite alternate;
+    text-align: center; /* Центрирование текста по горизонтали */
 }
 
 /* Адаптивность */
@@ -755,7 +752,7 @@ footer p {
 
 @media (max-width: 992px) {
     .hero h2::before {
-        content: "РАЗРАБОТЧИК ИГР";
+        content: "GAME DEVELOPER";
     }
     
     .hero h1 {
@@ -831,7 +828,7 @@ footer p {
 
 @media (max-width: 576px) {
     .hero h2::before {
-        content: "РАЗРАБОТЧИК";
+        content: "DEVELOPER";
     }
     
     .hero h1 {
